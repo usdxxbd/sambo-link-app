@@ -1,0 +1,46 @@
+name: sambo_link_app
+description: SAMBO Linktree launcher app for Android and iOS
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  webview_flutter: ^4.10.0
+  share_plus: ^10.1.4
+  url_launcher: ^6.3.1
+  connectivity_plus: ^6.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.3
+  flutter_native_splash: ^2.4.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/branding/sambo_logo.png
+    - assets/branding/sambo_logo_trimmed.png
+    - assets/branding/sambo_app_icon.png
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/branding/sambo_app_icon.png
+  remove_alpha_ios: true
+  min_sdk_android: 23
+
+flutter_native_splash:
+  color: '#FFFFFF'
+  image: assets/branding/sambo_logo_trimmed.png
+  android: true
+  ios: true
+  android_12:
+    color: '#FFFFFF'
+    image: assets/branding/sambo_app_icon.png
