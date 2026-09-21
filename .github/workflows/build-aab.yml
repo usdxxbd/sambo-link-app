@@ -18,7 +18,7 @@ jobs:
           cache: true
 
       - name: Create Android platform files
-        run: flutter create . --platforms=android --org kr.co.sambo --project-name sambo_link_app
+      run: flutter create . --platforms=android,ios --org kr.co.sambo --project-name sambo_link_app
 
       - name: Apply SAMBO settings
         run: python3 tool/configure_platforms.py
